@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.main{
+    display: inline-block;
+    margin-left: 30px;
+   
+}
+.menna{
+    margin: 5px;
+    
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  height:180px;
+  display: block;
+  position: relative;
+}
+img{
+    width: 100%;
+}
+.menna:hover{
+    border: 1px solid rgb(0, 153, 255);
+}
+.des .name{
+   font-weight:bold;
+   font-size: 30px;
+   color: rgb(13, 98, 155);
+    font-family: fantasy;
+   float: left;
+   margin-top: 50px;
+   margin-left: 200px;
+   position: absolute;
+  
+}
+span{
+    
+   font-size: 20px;
+   float: left;
+   margin-top: 25px;
+   color: rgb(66, 65, 65);
+}
+hr{
+    color: rgb(0, 153, 255);
+    border-bottom: 2px solid rgb(0, 153, 255);
+    
+}
+.back{
+    background-image: url(tri.jpg);
+}
+.content{
+    margin: 10px;
+    background-color: white;
+    border: 1px solid black;
+    opacity: 0.6;
+    padding: 25px;
+    
+}
+form{
+    color: black;
+    font-size: 25px;
+}
+label{
+    color: rgb(13, 98, 155);
+    font-weight: bold;
+    font-family: fantasy;
+}
+.col1 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px;
+    
+}
+.col2 {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+ 
+}
+input[type=text]:focus {
+  border: 3px solid rgb(0, 153, 255);
+  outline: none;
+}
+input[type=text]:hover{
+    border: 2px solid rgb(0, 153, 255);
+}
+textarea{
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 20px;
+    padding: 10px;
+}
+textarea:hover{
+    border: 1px solid rgb(0, 153, 255);
+}
+
+input[type=range]{
+    margin-top: 45px;
+}
+.list{
+    border: 1px solid black;
+    width: 300px;
+    margin-top: 10px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.col{
+    width: 25%;
+    border: 1px solid white;
+    margin-left: 80px;
+    float:left;
+   
+}
+.coo{
+    border: 1px solid white;
+    float:left;
+    
+    margin-left: 80px;
+}
+.cool{
+    border: 1px solid white;
+    float:left;
+   margin-left: 80px;
+    
+}
+ .lis{
+    border: 1px solid black;
+    
+    margin-top: 10px;
+    width: 300px;
+    text-align: center;
+    height: 120px;
+    box-sizing: border-box;
+    
+}
+.contact{
+    margin-top: 38px;
+}
+.contact li{
+   display: inline;
+   margin-left: 50px;
+}
+.lista{
+    border: 1px solid black;
+    float: left;
+    margin-top: 10px;
+    width: 300px;
+    text-align: center;
+    height: 120px;
+    box-sizing: border-box;
+    
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+@media screen  and(max-width : 600px){
+    .lis, .lista {
+        margin-left: 0;
+       
+        
+        float: none;
+    }
+
+    
+}
+
+</style>
+
+
+
+
+
+</head>
+<body>
+    <div class="main">
+<div class="menna">
+   
+    <img src="me.jpg" alt="myphoto"  >
+    </div>
+<div class="des">
+    <p class="name">Menna Allah Mohamed Kamel<br><span>student</span> </p>
+     </div>
+</div>
+<div class="back">
+    <hr>
+<div class="content">
+    <form>
+<div class="row">
+    <div class="col1">
+        <label for="fname">First name:</label></div>
+        <div class="col2">
+        <input type="text" id="fname" name="fname" value="Menna Allah" readonly></div></div>
+
+<div class="row">
+    <div class="col1">
+        <label for="lname">Last name:</label></div>
+        <div class="col2">
+        <input type="text" id="lname" name="lname" value="Mohamed" readonly></div></div>
+       
+<div class="row">
+    <div class="col1">
+        <label for="add">Address:</label></div>
+        <div class="col2">
+        <input type="text" id="add"  value="Cairo" readonly></div></div>
+
+<div class="row">        
+    <div class="col1">
+        <label for="edu">Education:</label></div>
+        <div class="col2">
+        <textarea  id="edu"  readonly>Studied at preparatory and high school and now Study at Electronics and communication department in Shoubra faculty of engineering-benha.</textarea></div></div>
+       
+<div class="row">
+    <div class="col">
+        <label>Web Skills:</label><br>
+        <div class="list">
+        <ul>
+            <li>HTML:80%</li>
+            <li>CSS:60%</li>
+        </ul></div></div>
+    <div class="coo">
+        <label>Hoppies:</label><br>
+        <div class="lis">
+            <ul>
+                <li>Drawing</li>
+                <li>Painting</li>
+                <li>Reading</li>
+            </ul></div></div>
+
+        <div class="cool">
+        <label>Languages:</label><br>
+        <div class="lista">
+            <ul>
+                <li>Arabic</li>
+                <li>English</li>
+                
+                
+            </ul></div></div>
+        
+        </div>
+
+   <div class="contact">    
+    <label>Contact:</label>    
+    
+    <ul>
+        <li>Phone: 01019190567</li>    |
+        <li>Email:@menna.com </li>     |
+        <li>Facebook:menna.com</li>
+      </ul>
+    </div>   
+    </form>
+ 
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
